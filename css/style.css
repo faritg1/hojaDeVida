@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+}
+
+.contenedorGeneral{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(135, 135, 233);
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.contenedorUno{
+    width: 33.3%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfilImg img{
+    border-radius: 50%;
+    transition: filter  3s;
+}
+
+.datosPersonales{
+    border: 1px solid black;
+}
+
+.perfilPersonal{
+    border: 1px solid black;
+}
+
+.contenedorDos{
+    width: 33.3%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.contenedorTres{
+    width: 33.3%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+
+
