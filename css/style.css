@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +6,14 @@
 }
 
 body{
-    font-family: Arial;
+    font-family: 'Lora', serif;
+}
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1em;
 }
 
 .contenedorGeneral{
@@ -23,16 +31,18 @@ body{
     padding: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
 .perfilImg img{
     border-radius: 50%;
-    transition: filter  3s;
+    height: 300px;
 }
 
 .datosPersonales{
     border: 1px solid black;
+    align-self: start;
 }
 
 .perfilPersonal{
@@ -43,13 +53,49 @@ body{
     width: 33.3%;
     border: 1px solid black;
     margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skillTecno{
+    border: 1px solid black;
+}
+
+.proyectosPersonales{
+    border: 1px solid black;
+}
+
+.logros{
+    border: 1px solid black;
 }
 
 .contenedorTres{
     width: 33.3%;
     border: 1px solid black;
     margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.idiomas{
+    border: 1px solid black;
+}
+
+.estudios{
+    border: 1px solid black;
+}
+
+.experiencias{
+    border: 1px solid black;
+}
+
+
+
+
 
 
 
