@@ -8,90 +8,95 @@
 body{
     font-family: 'Lora', serif;
 }
+
 h3{
     font-size: 2em;
+    color: #00595C;
+    border-bottom: 1px solid black;
 }
 
 p{
     font-size: 1em;
+    color: brown;
+}
+
+span{
+    color: aqua;
 }
 
 .contenedorGeneral{
     display: flex;
-    height: 100vh;
-    background-color: rgb(135, 135, 233);
-    border: 1px solid black;
-    margin: 10px;
+    height: 100%;
+    background-color: #56DDD0;
 }
 
 .contenedorUno{
+    background-color: #23A699;
     width: 33.3%;
-    border: 1px solid black;
     margin: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    gap: 30px;
+    border-radius: 1%;
+
 }
 
 .perfilImg img{
     border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
     height: 300px;
 }
 
 .datosPersonales{
-    border: 1px solid black;
-    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .perfilPersonal{
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.perfilPersonal p{
+    text-align: justify;
 }
 
 .contenedorDos{
+    background-color: #23A699;
     width: 33.3%;
-    border: 1px solid black;
     margin: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 1%;
 }
 
-.skillTecno{
+.iconSkillTecno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 15px;
     border: 1px solid black;
-}
-
-.proyectosPersonales{
-    border: 1px solid black;
-}
-
-.logros{
-    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
 }
 
 .contenedorTres{
+    background-color: #23A699;
     width: 33.3%;
-    border: 1px solid black;
     margin: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 1%;
 }
 
-.idiomas{
-    border: 1px solid black;
-}
-
-.estudios{
-    border: 1px solid black;
-}
-
-.experiencias{
-    border: 1px solid black;
-}
 
 
 
