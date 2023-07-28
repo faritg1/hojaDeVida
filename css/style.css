@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+:root{
+    --transition:color 0.1s, background-color 0.2s ease-in-out;
+    --skills-bar-length: 0%;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +22,7 @@ h3{
 }
 
 p{
-    font-size: 1em;
+    font-size: 1.1em;
     color: brown;
 }
 
@@ -79,11 +85,78 @@ span{
 .iconSkillTecno{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(96px,1fr)); */
     justify-items: center;
     gap: 15px;
-    border: 1px solid black;
     padding: 10px;
     margin: 10px;
+}
+
+.skillsBar,
+.skillsBar::after{
+    position: relative;
+    width: 100px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skillsBar::after{
+    content: "";
+    position: absolute;
+    left: -100px;
+    background-color: blue;
+    transition: var(--transition);
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+.skillsBar--10::after{
+    --skills-bar-length: 10%
+}
+
+.skillsBar--20::after{
+    --skills-bar-length: 20%
+}
+
+.skillsBar--30::after{
+    --skills-bar-length: 30%
+}
+
+.skillsBar--40::after{
+    --skills-bar-length: 40%
+}
+
+.skillsBar--50::after{
+    --skills-bar-length: 50%
+}
+
+.skillsBar--60::after{
+    --skills-bar-length: 60%
+}
+
+.skillsBar--70::after{
+    --skills-bar-length: 70%
+}
+
+.skillsBar--80::after{
+    --skills-bar-length: 80%
+}
+
+.skillsBar--90::after{
+    --skills-bar-length: 90%
+}
+
+@keyframes skills-bar-fill{
+    to{
+        transform: translateX(var(--skills-bar-length));
+    }
+}
+
+.logros{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .contenedorTres{
@@ -93,8 +166,26 @@ span{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     border-radius: 1%;
+}
+
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.estudios{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experiencias{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
