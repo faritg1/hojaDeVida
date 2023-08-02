@@ -23,7 +23,7 @@ h3{
 }
 
 p{
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: rgb(4, 47, 52);
 }
 
@@ -40,15 +40,17 @@ span{
 }
 
 .contenedorUno{
+    display: grid;
     background-color: var(--background-color);
     flex: 30%;
     margin: 10px;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     border-radius: 1%;
-    
+}
+
+.perfilImg{
+    display: grid;
+    place-items: center;
 }
 
 .perfilImg img{
@@ -77,20 +79,20 @@ span{
 }
 
 .contenedorDos{
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: var(--background-color);
     flex: 30%;
+    column-gap: 100px;
     margin: 10px;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     border-radius: 1%;
 }
 
 .iconSkillTecno{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-columns: repeat(auto-fit, minmax(96px,1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;   
+/*     grid-template-columns: repeat(auto-fit, minmax(96px,1fr));*/    
     justify-items: center;
     gap: 15px;
 }
@@ -108,12 +110,20 @@ span{
 }
 
 .contProyectos{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
     align-items: center;
-    gap: 30px;
 }
 
+.contProyectoImg a img{
+    height: 100px;
+    width: 100px;
+/*     object-fit: cover;
+    background-position: center; */
+}
+
+/* COMIENZO  DE ANIMACIONES */
 .skillsBar,
 .skillsBar::after{
     position: relative;
@@ -174,15 +184,16 @@ span{
         transform: translateX(var(--skills-bar-length));
     }
 }
+/* TERMINACION DE ANIMACIONES */
 
 .contenedorTres{
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: var(--background-color);
     flex: 30%;
+    column-gap: 100px;
     margin: 10px;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     border-radius: 1%;
 }
 
@@ -190,6 +201,11 @@ span{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.infoIdiomas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .contIdioma{
