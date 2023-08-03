@@ -103,6 +103,41 @@ span{
     align-items: center;
 }
 
+/* BONNUS */
+.contSkill img{
+    transition: opacity .3s ease;
+    position: relative;
+}
+
+.contSkill:hover img{
+    opacity: 1;
+}
+
+figcaption{
+    opacity: 0;
+/*     background-color: rgba(0, 0, 0, 0.429);*/    
+    background-color: #c3d0d16f;
+    transition: opacity .3s ease;
+    position: absolute;
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contSkill:hover figcaption {
+    opacity: 1;
+}
+
+.textPor{
+    color: #e01e1e;
+    font-size: 1.5em;
+}
+/* BONNUS */
+
 .proyectosPersonales{
     display: flex;
     flex-direction: column;
@@ -200,12 +235,7 @@ span{
 .idiomas{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.infoIdiomas{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .contIdioma{
@@ -220,15 +250,5 @@ span{
 .estudios{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
-
-
-
-
-
-
-
-
-
-
