@@ -91,7 +91,7 @@ span{
 
 .iconSkillTecno{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   
+    grid-template-columns: 1fr 1fr 1fr;
 /*     grid-template-columns: repeat(auto-fit, minmax(96px,1fr));*/    
     justify-items: center;
     gap: 15px;
@@ -104,6 +104,32 @@ span{
 }
 
 /* BONNUS */
+.contProyectos{
+    transition: opacity .3s ease;
+    position: relative;
+}
+
+.contProyectos:hover{
+    opacity: 1;
+}
+
+.contProyectos figcaption{
+    opacity: 0;
+    background-color: #c3d0d16f;
+    transition: opacity .3s ease;
+    position: absolute;
+    border-radius: 10px;
+    margin: -100px -0.1px;
+    height: 100px;
+    width: 253px;
+    display: grid;
+    place-items: center;
+}
+
+.contProyectos:hover figcaption{
+    opacity: 1;
+}
+
 .contSkill img{
     transition: opacity .3s ease;
     position: relative;
@@ -113,9 +139,8 @@ span{
     opacity: 1;
 }
 
-figcaption{
+.contSkill figcaption{
     opacity: 0;
-/*     background-color: rgba(0, 0, 0, 0.429);*/    
     background-color: #c3d0d16f;
     transition: opacity .3s ease;
     position: absolute;
@@ -223,10 +248,8 @@ figcaption{
 
 .contenedorTres{
     display: grid;
-    grid-template-columns: 1fr;
     background-color: var(--background-color);
     flex: 30%;
-    column-gap: 100px;
     margin: 10px;
     padding: 10px;
     border-radius: 1%;
